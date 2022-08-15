@@ -4,8 +4,6 @@ import addTodoBtn from '../assets/images/add-todo-btn.svg';
 import emptyBg from '../assets/images/empty-bg.png';
 import deleteBtn from '../assets/images/delete.svg';
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import { useNavigate } from 'react-router-dom';
 
 const { useState, useEffect } = React;
 
@@ -105,57 +103,36 @@ const Empty = () => {
 }
 
 const Home = () =>{
-    const navigate = useNavigate();
     const [ todoList, setTodoList ] = useState([]);
     const [ userInfo, setUserInfo ] = useState('');
-    // notify toast
-    const notify = (type, title, messages = []) => 
-        toast[type](
-            <>
-                <h5>{title}</h5>
-                <ul className="notify-content">
-                    {
-                        messages.map(item => <li>{item}</li>)
-                    }
-                </ul>
-            </>,
-            {
-                autoClose: 2000,
-                hideProgressBar: true,
-                closeOnClick: true
-            }
-    );
 
     useEffect(() => {
-        const data = JSON.parse(localStorage.getItem('reactTodoList'));
-        setUserInfo(data);
-    }, []);
+        const fetchData = async () => {
+            const data = JSON.parse(localStorage.getItem('reactTodoList'));
+            setUserInfo(data);
 
-    useEffect(() => {
-        if (userInfo) {
-            getTodos();
-        }
-    })
-
-    // 取得 todo-list
-    const getTodos = async () => {
-        try {
             const response = await axios({
                 url: "https://todoo.5xcamp.us/todos",
                 method: "get",
                 headers: {
-                    authorization: userInfo.token
+                    authorization: data.token
                 }
             });
             setTodoList(response.data.todos);
-        } catch(err) {
-            if (err.response.status === 401) {
-                navigate('/login');
+        };
+        fetchData();
+    }, []);
+
+    // 取得 todo-list
+    const getTodos = async () => {
+        const response = await axios({
+            url: "https://todoo.5xcamp.us/todos",
+            method: "get",
+            headers: {
+                authorization: userInfo.token
             }
-            const errTitle = err?.response?.data?.message;
-            const errContent = err?.response?.data?.error;
-            notify('error', errTitle, errContent);
-        }
+        });
+        setTodoList(response.data.todos);
     };
 
     // 新增 todo
@@ -228,7 +205,6 @@ const Home = () =>{
                         : <Empty></Empty>
                 }
             </div>
-            <ToastContainer />
         </div>
     );
 }
