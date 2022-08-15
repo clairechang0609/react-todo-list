@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/clairechang0609/react-todo-list/static/css/main.5ff260ca.css",
-    "main.js": "/clairechang0609/react-todo-list/static/js/main.69defa53.js",
-    "static/js/787.28cb0dcd.chunk.js": "/clairechang0609/react-todo-list/static/js/787.28cb0dcd.chunk.js",
-    "static/media/bg.png": "/clairechang0609/react-todo-list/static/media/bg.8f89bfabb4504208647e.png",
-    "static/media/empty-bg.png": "/clairechang0609/react-todo-list/static/media/empty-bg.3d9709e802a2248ad2b7.png",
-    "static/media/logo.svg": "/clairechang0609/react-todo-list/static/media/logo.403a4085b5d73d81486339a4e86f75f5.svg",
-    "static/media/delete.svg": "/clairechang0609/react-todo-list/static/media/delete.cbd9022e6b6fd20c3cd25c6c805851a9.svg",
-    "index.html": "/clairechang0609/react-todo-list/index.html",
-    "static/media/add-todo-btn.svg": "/clairechang0609/react-todo-list/static/media/add-todo-btn.ecf7f0ed0b4b9f8dc37953b234b4190c.svg",
-    "static/media/checked.svg": "/clairechang0609/react-todo-list/static/media/checked.11af07911f2a32aae366.svg",
-    "main.5ff260ca.css.map": "/clairechang0609/react-todo-list/static/css/main.5ff260ca.css.map",
-    "main.69defa53.js.map": "/clairechang0609/react-todo-list/static/js/main.69defa53.js.map",
-    "787.28cb0dcd.chunk.js.map": "/clairechang0609/react-todo-list/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/react-todo-list/static/css/main.4b50e38c.css",
+    "main.js": "/react-todo-list/static/js/main.0de0d7b8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/react-todo-list/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bg.png": "/react-todo-list/static/media/bg.8f89bfabb4504208647e.png",
+    "static/media/empty-bg.png": "/react-todo-list/static/media/empty-bg.3d9709e802a2248ad2b7.png",
+    "static/media/logo.svg": "/react-todo-list/static/media/logo.403a4085b5d73d81486339a4e86f75f5.svg",
+    "static/media/delete.svg": "/react-todo-list/static/media/delete.cbd9022e6b6fd20c3cd25c6c805851a9.svg",
+    "index.html": "/react-todo-list/index.html",
+    "static/media/add-todo-btn.svg": "/react-todo-list/static/media/add-todo-btn.ecf7f0ed0b4b9f8dc37953b234b4190c.svg",
+    "static/media/checked.svg": "/react-todo-list/static/media/checked.11af07911f2a32aae366.svg",
+    "main.4b50e38c.css.map": "/react-todo-list/static/css/main.4b50e38c.css.map",
+    "main.0de0d7b8.js.map": "/react-todo-list/static/js/main.0de0d7b8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/react-todo-list/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ff260ca.css",
-    "static/js/main.69defa53.js"
+    "static/css/main.4b50e38c.css",
+    "static/js/main.0de0d7b8.js"
   ]
 }
