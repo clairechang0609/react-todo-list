@@ -108,9 +108,9 @@ const Login = () =>{
                         <h2 className="title">註冊帳號</h2>
                         <form onSubmit={handleSubmit(submitRegister)} className="form">
                             <div className="input-wrap">
-                                <label htmlFor="registerEmail">Email</label>
-                                <input type="email" id="registerEmail" name="email" placeholder="請輸入Email" {...register("registerEmail", { required: true })} />
-                                <small className="alert">{ errors.registerEmail && '此欄位不可為空' }</small>
+                                <label htmlFor="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="請輸入Email" {...register("email", { required: true })} />
+                                <small className="alert">{ errors.email && '此欄位不可為空' }</small>
                             </div>
                             <div className="input-wrap">
                                 <label htmlFor="nickname">您的暱稱</label>
